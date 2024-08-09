@@ -1,3 +1,4 @@
+require('dotenv').config();
 const app = require('./app');
 const log = console.log;
 const PORT = 1000;

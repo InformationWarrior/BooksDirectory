@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const fs = require('fs');
 const path = require('path');
-const Book = require('./book.model');
+const Book = require('./model/book.model');
 const filePath = path.join(__dirname, 'book.data.json');
 const log = console.log;
 

@@ -8,13 +8,13 @@ const log = console.log;
 const seedBooks = async () => {
     try {
         const fileData = fs.readFileSync(filePath, 'utf8');
-        const books = JSON.parse(fileData);        
+        const books = JSON.parse(fileData);
         await Book.insertMany(books);
-        console.log("Books successfully added to database. ");
+        log("Books successfully added to database. ");
         mongoose.disconnect();
-    } 
+    }
     catch (error) {
-        console.log("Error seeding books > ", error);
+        log("Error seeding books > ", error);
         mongoose.disconnect();
     }
 };

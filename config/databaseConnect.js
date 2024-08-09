@@ -13,9 +13,10 @@ const dbConnect = async () => {
         await mongoose.connect(url, {
             useNewUrlParser: true,
             useUnifiedTopology: true
-          });
+        });
         log("Connected to database");
-    } catch (error) {
+    }
+    catch (error) {
         log("Database Connection error >>> ", error);
     }
 }

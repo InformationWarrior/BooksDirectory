@@ -1,6 +1,6 @@
 const express = require("express");
 const booksRouter = require("./router/book.router");
-const dbConnect = require("./config/databaseConnect");
+const dbConnect = require("./config/dbConnect");
 const seedBooks = require('./app/seedBooksInDb');
 const app = express();
 

@@ -4,11 +4,11 @@ const booksController = require('../controller/book.controller');
 router.post('/', booksController.createBook);
 
 router.get('/', booksController.findAllBooks);
-router.get('/:isbn', booksController.findBookById);
+router.get('/:isbn', booksController.findBookByIsbn);
 
-router.put('/:isbn', booksController.updateBookById);
+router.put('/:isbn', booksController.updateBookByIsbn);
 
-router.delete('/:isbn', booksController.deleteBookById);
+router.delete('/:isbn', booksController.deleteBookByIsbn);
 router.delete('/', booksController.deleteAllBooks);
 
 
